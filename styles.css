@@ -46,17 +46,17 @@ body {
 }
 
 .floating-box.left {
-    left: -170px; /* Ajusta según el ancho del cuadro */
+    left: -100px; /* Ajusta según el ancho del cuadro */
     top: 50%;
 }
 
 .floating-box.right {
-    right: -250px; /* Ajusta este valor para mover el cuadro más a la derecha */
+    right: -270px; /* Ajusta este valor para mover el cuadro más a la derecha */
     top: 50%;
 }
 
 .floating-box.bottom {
-    bottom: -70px; /* Ajusta según el alto del cuadro */
+    bottom: -80px; /* Ajusta según el alto del cuadro */
     left: 50%;
 }
 
@@ -101,4 +101,25 @@ body {
     border-right: 10px solid transparent;
     border-bottom: 10px solid white;
     transform: translateX(-50%);
+}
+
+/* Nuevos estilos para los cuadros adicionales */
+.floating-box.top-left {
+    top: 77px;
+    left: 230px;
+}
+
+.floating-box.top-right {
+    top: 77px;
+    right: 60px;
+}
+
+.floating-box.bottom-left {
+    bottom: 37px;
+    left: 230px;
+}
+
+.floating-box.bottom-right {
+    bottom: 37px;
+    right: 60px;
 }
