@@ -20,6 +20,7 @@ body {
 .wrapper {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -36,34 +37,68 @@ body {
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transform: translateY(-50%);
-    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.floating-box.top {
+    top: -60px; /* Ajusta según el alto del cuadro */
+    left: 50%;
 }
 
 .floating-box.left {
     left: -170px; /* Ajusta según el ancho del cuadro */
+    top: 50%;
 }
 
 .floating-box.right {
     right: -170px; /* Ajusta según el ancho del cuadro */
+    top: 50%;
+}
+
+.floating-box.bottom {
+    bottom: -60px; /* Ajusta según el alto del cuadro */
+    left: 50%;
 }
 
 .floating-box::after {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translateY(-50%) translateX(-50%);
     width: 0;
     height: 0;
+}
+
+.floating-box.top::after {
+    top: 100%;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+    transform: translateX(-50%);
+}
+
+.floating-box.left::after {
+    top: 50%;
+    right: -10px;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 10px solid white;
+    transform: translateY(-50%);
 }
 
 .floating-box.right::after {
-    left: 0;
-    transform: translateY(-50%) translateX(-50%);
-    border-left: none;
+    top: 50%;
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
     border-right: 10px solid white;
+    transform: translateY(-50%);
+}
+
+.floating-box.bottom::after {
+    bottom: 100%;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    transform: translateX(-50%);
 }
