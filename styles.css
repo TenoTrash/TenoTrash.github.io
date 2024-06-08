@@ -41,7 +41,7 @@ body {
 }
 
 .floating-box.top {
-    top: -60px; /* Ajusta según el alto del cuadro */
+    top: -40px; /* Ajusta según el alto del cuadro */
     left: 50%;
 }
 
@@ -51,12 +51,12 @@ body {
 }
 
 .floating-box.right {
-    right: -300px; /* Ajusta este valor para mover el cuadro más a la derecha */
+    right: -250px; /* Ajusta este valor para mover el cuadro más a la derecha */
     top: 50%;
 }
 
 .floating-box.bottom {
-    bottom: -60px; /* Ajusta según el alto del cuadro */
+    bottom: -70px; /* Ajusta según el alto del cuadro */
     left: 50%;
 }
 
