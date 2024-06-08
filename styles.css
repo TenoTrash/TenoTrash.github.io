@@ -51,7 +51,7 @@ body {
 }
 
 .floating-box.right {
-    right: -170px; /* Ajusta según el ancho del cuadro */
+    right: -220px; /* Ajusta este valor para mover el cuadro más a la derecha */
     top: 50%;
 }
 
@@ -78,7 +78,7 @@ body {
 
 .floating-box.left::after {
     top: 50%;
-    right: 20px;
+    right: -10px;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 10px solid white;
