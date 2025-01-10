@@ -31,7 +31,7 @@ body {
 
 .floating-box {
     position: absolute;
-    width: 150px; /* Ajusta el ancho según necesites */
+    width: 145px; /* Ajusta el ancho según necesites */
     padding: 10px;
     background-color: white;
     border: 1px solid #ccc;
